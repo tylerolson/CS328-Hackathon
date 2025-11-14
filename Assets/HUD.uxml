@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label text="0" name="PlayerScore" style="width: 20px; position: absolute; font-size: 90px;">
+        <Bindings>
+            <ui:DataBinding property="text" data-source-path="scorePlayer" data-source-type="GameManager, Assembly-CSharp" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:Label>
+    <ui:Label text="0" name="AIScore" style="position: absolute; right: 0; font-size: 90px;">
+        <Bindings>
+            <ui:DataBinding property="text" data-source-path="scoreAI" data-source-type="GameManager, Assembly-CSharp" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:Label>
+</ui:UXML>
